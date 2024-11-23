@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.employeemanagementsystem.HelloController">
+    <children>
+        <!-- Title Label with stylish font and color -->
+        <Label text="Employee Management System" layoutX="300" layoutY="20"
+               style="-fx-font-family: 'System'; -fx-font-size: 28; -fx-font-weight: bold; -fx-text-fill: #4CAF50;"/>
+
+        <!-- TableView with nice borders and alternating row colors -->
+        <TableView fx:id="employeeTable" layoutX="50" layoutY="100" prefWidth="700" prefHeight="300"
+                   style="-fx-background-color: #f4f4f9; -fx-border-color: #4CAF50; -fx-border-width: 2;">
+            <columns>
+                <TableColumn text="Name" fx:id="nameColumn" prefWidth="200"/>
+                <TableColumn text="Type" fx:id="typeColumn" prefWidth="200"/>
+                <TableColumn text="Salary" fx:id="salaryColumn" prefWidth="200"/>
+            </columns>
+        </TableView>
+
+        <!-- Input fields with modern design and a soft border -->
+        <TextField fx:id="nameField" layoutX="50" layoutY="420" promptText="Enter Name"
+                   style="-fx-background-color: #ffffff; -fx-border-color: #4CAF50; -fx-border-radius: 5; -fx-padding: 5;"/>
+
+        <ComboBox fx:id="typeComboBox" layoutX="250" layoutY="420" promptText="Select Type"
+                  style="-fx-background-color: #ffffff; -fx-border-color: #4CAF50; -fx-border-radius: 5; -fx-padding: 5;">
+            <!-- ComboBox items will be populated dynamically in the controller -->
+        </ComboBox>
+
+        <TextField fx:id="salaryField" layoutX="450" layoutY="420" promptText="Enter Salary / Rate"
+                   style="-fx-background-color: #ffffff; -fx-border-color: #4CAF50; -fx-border-radius: 5; -fx-padding: 5;"/>
+
+        <TextField fx:id="hoursField" layoutX="650" layoutY="420" promptText="Enter Hours Worked"
+                   style="-fx-background-color: #ffffff; -fx-border-color: #4CAF50; -fx-border-radius: 5; -fx-padding: 5;"/>
+
+        <!-- Buttons with different colors and slight spacing -->
+        <Button text="Add Employee" layoutX="50" layoutY="470" onAction="#handleAddEmployee"
+                style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold; -fx-border-radius: 5; -fx-padding: 10 20;"/>
+
+        <Button text="Update Salaries" layoutX="200" layoutY="470" onAction="#handleUpdateSalaries"
+                style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold; -fx-border-radius: 5; -fx-padding: 10 20;"/>
+
+        <Button text="Remove Employee" layoutX="400" layoutY="470" onAction="#handleRemoveEmployee"
+                style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-weight: bold; -fx-border-radius: 5; -fx-padding: 10 20;"/>
+    </children>
+</AnchorPane>
