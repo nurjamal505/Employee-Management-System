@@ -29,7 +29,7 @@ This project uses JavaFX's `TableView` for displaying data and provides a clean,
    ```
 2. Open the project in IntelliJ IDEA or any preferred IDE.
 3. Set up the JavaFX SDK and add it to the project.
-4. Run the `Main.java` file to launch the application.
+4. Run the `HelloApplication.java` file to launch the application.
 
 ---
 
