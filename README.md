@@ -74,7 +74,7 @@ This project uses JavaFX's `TableView` for displaying data and provides a clean,
   - Type: "Contractor"
   - Salary: "50" (Hourly Rate)
   - Hours Worked: "160" (Maximum Hours)
-  ![Снимок экрана 2024-12-01 002632](https://github.com/user-attachments/assets/2171b5e5-5f3b-496d-a936-023ba91294f7)
+  ![Снимок экрана 2024-12-01 002731](https://github.com/user-attachments/assets/2a33dbc6-daac-4c63-b37f-dcc2d946fd44)
 
 ---
 
