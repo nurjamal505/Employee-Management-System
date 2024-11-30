@@ -25,7 +25,7 @@ This project uses JavaFX's `TableView` for displaying data and provides a clean,
 ## Instructions to Run the Program
 1. Clone the repository from GitHub:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/nurjamal505/Employee-Management-System.git
    ```
 2. Open the project in IntelliJ IDEA or any preferred IDE.
 3. Set up the JavaFX SDK and add it to the project.
